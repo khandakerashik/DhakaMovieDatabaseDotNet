@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{194A0440-838C-48BE-B382-2EEA14E5431D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dhaka_Movie_Database</RootNamespace>
+    <AssemblyName>Dhaka Movie Database</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Movies.Designer.cs">
+      <DependentUpon>Add_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Interface.Designer.cs">
+      <DependentUpon>Admin_Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_see_hall_owner_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_see_hall_owner_list.Designer.cs">
+      <DependentUpon>Admin_see_hall_owner_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_see_movie_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_see_movie_list.Designer.cs">
+      <DependentUpon>Admin_see_movie_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_See_Member_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_See_Member_Request.Designer.cs">
+      <DependentUpon>Admin_See_Member_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_see_suggested_item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_see_suggested_item.Designer.cs">
+      <DependentUpon>Admin_see_suggested_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_see_viewers_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_see_viewers_list.Designer.cs">
+      <DependentUpon>Admin_see_viewers_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dhaka Movie Database.designer.cs">
+      <DependentUpon>Dhaka Movie Database.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Hall_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hall_Interface.Designer.cs">
+      <DependentUpon>Hall_Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_Page.Designer.cs">
+      <DependentUpon>Home_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in.Designer.cs">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="See_Member_Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="See_Member_Request.Designer.cs">
+      <DependentUpon>See_Member_Request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign_up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_up.Designer.cs">
+      <DependentUpon>Sign_up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggest_movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggest_movie.Designer.cs">
+      <DependentUpon>Suggest_movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewers_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewers_Interface.Designer.cs">
+      <DependentUpon>Viewers_Interface.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Movies.resx">
+      <DependentUpon>Add_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Interface.resx">
+      <DependentUpon>Admin_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_see_hall_owner_list.resx">
+      <DependentUpon>Admin_see_hall_owner_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_see_movie_list.resx">
+      <DependentUpon>Admin_see_movie_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_See_Member_Request.resx">
+      <DependentUpon>Admin_See_Member_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_see_suggested_item.resx">
+      <DependentUpon>Admin_see_suggested_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_see_viewers_list.resx">
+      <DependentUpon>Admin_see_viewers_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hall_Interface.resx">
+      <DependentUpon>Hall_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_Page.resx">
+      <DependentUpon>Home_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in.resx">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="See_Member_Request.resx">
+      <DependentUpon>See_Member_Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign_up.resx">
+      <DependentUpon>Sign_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggest_movie.resx">
+      <DependentUpon>Suggest_movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewers_Interface.resx">
+      <DependentUpon>Viewers_Interface.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Dhaka Movie Database.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Dhaka Movie Database.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dhaka Movie Database.dbml.layout">
+      <DependentUpon>Dhaka Movie Database.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musica-searcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

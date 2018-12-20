@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Dhaka Movie Database">
+  <DataContextMoniker Name="/Dhaka_Movie_DatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="babe40bb-2460-4859-91f7-3064498417bb" absoluteBounds="2.625, 3.375, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/Dhaka_Movie_DatabaseDataContext/Hall_Owner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13d61d73-218e-421e-9a67-3688e491be56" absoluteBounds="2.64, 3.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f05dd0a-1c6c-418b-b98b-62fb5b0017e0" absoluteBounds="6.125, 3.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/Dhaka_Movie_DatabaseDataContext/Member_Request" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f62fec66-dbdb-443d-8b98-5d8c1e5046bc" absoluteBounds="6.14, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92a91bb3-116f-4abd-aede-0bc70bde2080" absoluteBounds="0.5, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Dhaka_Movie_DatabaseDataContext/Movie_Information" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f2aca98-2dee-4f40-9ea7-09a8f7b1afe8" absoluteBounds="0.51500000000000012, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9107eb15-0e35-4c94-a5d0-8bf4636f7765" absoluteBounds="2.75, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/Dhaka_Movie_DatabaseDataContext/Suggested_Movie" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a0ac56c-27bb-43ce-a0bd-593ebe05ac30" absoluteBounds="2.7649999999999997, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd5c9537-fa9a-4d60-8820-2ed070821010" absoluteBounds="5, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/Dhaka_Movie_DatabaseDataContext/User_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="963ebd66-6b75-47ff-a393-ae3bea60bbed" absoluteBounds="5.0150000000000006, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="288c1d03-f37a-4990-b395-6a01dc91d43f" absoluteBounds="7.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/Dhaka_Movie_DatabaseDataContext/Viewers_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6188f174-f312-4c2b-88d0-242b78c1ab8d" absoluteBounds="7.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
