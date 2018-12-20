@@ -92,15 +92,5 @@ namespace Dhaka_Movie_Database
             Admin_see_suggested_item suggested = new Admin_see_suggested_item(email);
             suggested.Show();
         }
-
-        //private void category_Box_SelectedIndexChanged_1(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void Hall_Box_SelectedIndexChanged_1(object sender, EventArgs e)
-        //{
-
-        //}
     }
 }
